@@ -72,11 +72,12 @@ body {
 }
 
 .course-card {
-
     width: 270px;
-
     margin: 32px;
     text-align: center;
+    border: 1px solid black;
+    border-radius: 12px;
+    box-shadow: 5px 5px 5px #ddd6d6;
 }
 
 .courses-cards-container {
@@ -85,17 +86,33 @@ body {
     margin: 36px;
 }
 
-.service-card {
+/* .service-card {
     width: 251px;
     margin: 12px;
-}
+} */
+
 .service-card01 {
     width: 251px;
     margin: 12px;
 }
-.service-card-img {
+
+.service-card {
+    text-align: center;
+    /* border-bottom: 1px solid; */
+    border: 1px px solid black;
+    border-radius: 12px;
+    box-shadow: 12px 12px 12px lightslategray;
+    margin: 16px;
+}
+
+/* .service-card-img {
     width: 100%;
     border-radius: 12px;
+} */
+.service-card-img {
+    width: 90%;
+    border-radius: 12px;
+    margin-top: 13px;
 }
 
 .service-container {
@@ -112,6 +129,7 @@ body {
     text-align: center;
     color: white;
     height: 340px;
+    /* opacity: ; */
 }
 
 .ranking-card h1 {
@@ -120,9 +138,10 @@ body {
 }
 
 .ranking-container {
-    background-image: url(img/bg-image-17.jpg);
+    background-image: linear-gradient(rgba(0, 0, 40, 0.5), rgba(0, 0, 40, 0.5)), url(img/bg-image-17.jpg);
     height: 350px;
-    filter: brightness(0.5);
+    /* filter: brightness(0.5); */
+    /* opacity: 1; */
 }
 
 .ranking-cards-container {
@@ -139,11 +158,13 @@ body {
     width: 100%;
     border-radius: 6px;
 }
+
 .member-cards {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
 }
+
 .members-card-container {
     display: flex;
     justify-content: center;
@@ -329,17 +350,21 @@ li {
     margin-top: 6rem;
     color: white;
 }
-.contact-content{
+
+.contact-content {
     padding: 5%;
 }
-.contact-content h1{
+
+.contact-content h1 {
     font-size: 66px;
     margin: 0;
 }
-.contact-content p{
+
+.contact-content p {
     margin-bottom: 0;
 }
-.contact-btn{
+
+.contact-btn {
     background: none;
     border: 2px solid white;
     padding: 18px 40px;
@@ -347,127 +372,409 @@ li {
     margin-top: 60px;
     border-radius: 8px;
 }
-footer{
+
+footer {
     background-color: rgb(37, 37, 37);
     height: 100px;
     display: flex;
     justify-content: space-around;
     align-items: center;
 }
-.copyright{
+
+.copyright {
     color: white;
     font-size: 10px;
 }
-.social-media{
+
+.social-media {
     display: flex;
     color: white;
     margin: 10rem;
 }
-.social-media h1{
+
+button:hover {
+    cursor: pointer;
+}
+
+.social-media h1 {
     margin: 12px;
 }
-@media(max-width:576px){
-    .cmpny-content{
+
+@media (max-width:360px) {
+    .cmpny-content {
+        position: relative;
+        text-align: right;
+        width: 94%;
+        color: black;
+        text-align: left;
+        margin: 2px 16px;
+    }
+
+    .cmpny-name {
+        font-size: 40px;
+        color: black;
+    }
+
+    .cmpny-title {
+        color: black;
+        font-size: 16px;
+    }
+
+    .cmpny-btn {
+        background-color: rgb(244, 52, 100);
+        border: none;
+        padding: 14px 20px;
+        border-radius: 8px;
+        color: white;
+        font-size: 20px;
+        margin-top: 0px;
+    }
+
+    .links {
+        margin-right: 0;
+        font-size: 12px;
+    }
+
+    .links:hover {
+        color: blue;
+    }
+
+    .head-btn {
         display: none;
     }
-    .links{
-        margin: 3px;
-    }
-    .head-btn{
+
+    .head-logo {
         display: none;
     }
-    .course-card{
+
+    /* .course-card {
         margin: 0;
-    }
-    .courses-cards-container{
-        display:flex;
+        border-bottom: 1px solid;
+    } */
+
+    .courses-cards-container {
+        display: flex;
         flex-wrap: wrap;
     }
-    .service-card01{
-        display: none;
-    }
-    .service-card{
+
+    /* .service-card {
         text-align: center;
+        border-bottom: 1px solid;
+    } */
+
+    .service-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
     }
-    .ranking-card{
-        width: 132px;
-    }
-    .ranking-card h1{
+
+    .team-heading h1 {
         font-size: 45px;
     }
-    .ranking-card p{
-        text-align: center;
-    }
-    .team-heading h1{
-        font-size: 45px;
-    }
-    .member-cards{
+
+    .member-cards {
         display: block;
     }
+
     .about-img {
-        height: 294px;
-        width: 216px;
+        height: 400px;
+        width: 100%;
         margin-top: 16px;
+        object-fit: cover;
     }
+
+    .aboutus {
+        position: absolute;
+        text-align: left;
+        width: 100%;
+        margin-top: 12px;
+        color: white;
+    }
+
     .aboutus-container {
         display: flex;
+        justify-content: center;
+        margin-top: 70px;
+        flex-direction: column;
+    }
+
+    .aboutus h4 {
+        display: none;
+    }
+
+    .aboutus p {
+        display: none;
+    }
+
+    .ranking-container {
+        display: none;
+    }
+
+    .price-heading {
+        text-align: center;
+        margin-top: 4rem;
+    }
+
+    .wrapper {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        font-family: "Open Sans", sans-serif;
+        font-weight: 400;
+        color: #9f9f9f;
+        font-size: 15px;
+        /* display: block; */
+    }
+
+    .center-package {
+        box-sizing: border-box;
+        width: 250px;
+        height: 500px;
+        border: 3px solid #db2e2e;
+        background-color: #db2e2e;
+        border-radius: 7px;
+        padding: 24px;
+        text-align: center;
+        margin: 36px;
+    }
+
+    .foot-logo {
+        display: none;
+    }
+
+    .package {
+        box-sizing: border-box;
+        width: 250px;
+        height: 500px;
+        border: 3px solid #db2e2e;
+        border-radius: 7px;
+        padding: 24px;
+        text-align: center;
+        margin: 36px;
+    }
+
+    .copyright {
+        display: none;
+    }
+
+    .social-media {
+        display: flex;
+        color: white;
+    }
+
+    .social-media h1 {
+        margin: -22px;
+    }
+
+    footer {
+        background-color: rgb(37, 37, 37);
+        height: 100px;
+        display: flex;
         justify-content: space-between;
-        margin-top: 70px;    
+        align-items: center;
+    }
+
+    .contact-content {
+        padding: 3%;
+    }
 }
-.aboutus h4{
-    display: none;
+
+@media (min-width:360px) and (max-width:767px) {
+    .cmpny-content {
+        position: relative;
+        text-align: right;
+        width: 94%;
+        color: black;
+        text-align: left;
+        margin: 2px 16px;
+    }
+
+    .cmpny-name {
+        font-size: 40px;
+        color: black;
+    }
+
+    .cmpny-title {
+        color: black;
+        font-size: 16px;
+    }
+
+    .cmpny-btn {
+        background-color: rgb(244, 52, 100);
+        border: none;
+        padding: 14px 20px;
+        border-radius: 8px;
+        color: white;
+        font-size: 20px;
+        margin-top: 0px;
+    }
+
+    .links {
+        margin-right: 0;
+        /* display: none; */
+    }
+
+    .links:hover {
+        color: blue;
+    }
+
+    .head-btn {
+        display: none;
+    }
+
+    .head-logo {
+        display: none;
+    }
+
+    /* .course-card {
+        margin: 0;
+        border-bottom: 1px solid;
+    } */
+
+    .courses-cards-container {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    /* .service-card {
+        text-align: center;
+        border-bottom: 1px solid;
+    } */
+
+    .service-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .team-heading h1 {
+        font-size: 45px;
+    }
+
+    .member-cards {
+        display: block;
+    }
+
+    .about-img {
+        height: 400px;
+        width: 100%;
+        margin-top: 16px;
+        object-fit: cover;
+    }
+
+    .aboutus {
+        position: absolute;
+        text-align: left;
+        width: 100%;
+        margin-top: 12px;
+        color: white;
+    }
+
+    .aboutus-container {
+        display: flex;
+        justify-content: center;
+        margin-top: 70px;
+        flex-direction: column;
+    }
+
+    .aboutus h4 {
+        display: none;
+    }
+
+    .aboutus p {
+        display: none;
+    }
+
+    .ranking-container {
+        display: none;
+    }
+
+    .price-heading {
+        text-align: center;
+        margin-top: 4rem;
+    }
+
+    .wrapper {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        font-family: "Open Sans", sans-serif;
+        font-weight: 400;
+        color: #9f9f9f;
+        font-size: 15px;
+        /* display: block; */
+    }
+
+    .center-package {
+        box-sizing: border-box;
+        width: 301px;
+        height: 500px;
+        border: 3px solid #db2e2e;
+        background-color: #db2e2e;
+        border-radius: 7px;
+        padding: 24px;
+        text-align: center;
+        margin: 36px;
+    }
+
+    .package {
+        box-sizing: border-box;
+        width: 301px;
+        height: 500px;
+        border: 3px solid #db2e2e;
+        border-radius: 7px;
+        padding: 24px;
+        text-align: center;
+        margin: 36px;
+    }
+
+    .copyright {
+        display: none;
+    }
+
+    .social-media {
+        display: flex;
+        color: white;
+    }
+
+    .social-media h1 {
+        margin: -22px;
+    }
+
+    footer {
+        background-color: rgb(37, 37, 37);
+        height: 100px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
 }
-.aboutus p{
-    display: none;
-}
-.price-heading {
-    text-align: center;
-    margin-top: 4rem;
-}
-.wrapper {
-    font-family: "Open Sans", sans-serif;
-    font-weight: 400;
-    color: #9f9f9f;
-    font-size: 15px;
-    display: block;
-    
-}
-.center-package {
-    box-sizing: border-box;
-    width: 301px;
-    height: 500px;
-    border: 3px solid #db2e2e;
-    background-color: #db2e2e;
-    border-radius: 7px;
-    padding: 24px;
-    text-align: center;
-    margin: 36px;
-}
-.package {
-    box-sizing: border-box;
-    width: 301px;
-    height: 500px;
-    border: 3px solid #db2e2e;
-    border-radius: 7px;
-    padding: 24px;
-    text-align: center;
-    margin: 36px;
-}
-.copyright{
-    display: none;
-}
-.social-media {
-    display: flex;
-    color: white;   
-}
-.social-media h1{
-    margin: -22px;
-}
-footer {
-    background-color: rgb(37, 37, 37);
-    height: 100px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
+@media (min-width:767px) and (max-width:1023px){
+    .cmpny-content {
+        position: relative;
+        text-align: right;
+        width: 94%;
+        color: black;
+        text-align: left;
+        margin: 2px 16px;
+    }
+    .cmpny-name {
+        font-size: 40px;
+        color: black;
+    }
+    .cmpny-title {
+        color: black;
+        font-size: 16px;
+    }
+    .cmpny-btn {
+        background-color: rgb(244, 52, 100);
+        border: none;
+        padding: 14px 20px;
+        border-radius: 8px;
+        color: white;
+        font-size: 20px;
+        margin-top: 0px;
+    }
 }
